@@ -1,2 +1,2 @@
-script=/res/js/slimbox.2.0.5.js
+script=/res/js/slimbox.2.0.4.js
 components=jQuery,Core
