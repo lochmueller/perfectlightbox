@@ -1,84 +1,84 @@
 plugin.perfectlightbox {
-	
+
 	# cat=perfectlightbox/enable/e1; type=options[mootools,protaculous,jquery]; label= Which Javascript Librarys to use?: This should be set to either "mootools","protaculous" or "jquery".
 	libraryToUse = protaculous
-	
+
 	# cat=perfectlightbox/enable/e2; type=boolean; label= Use included Javascript Librarys?: You can set this to off when you are already using protaculous/mootools/jquery globally.
 	includeJSLibrarys = 1
-	
+
 	# cat=perfectlightbox/enable/e3; type=boolean; label= Put JS in <body>?: You can set this to put all the needed scripts&css in the document's body (experimental).
 	bodyScripts = 0
-	
+
 	# cat=perfectlightbox/enable/e4; type=boolean; label= Enable globally?: You can set this to on when you want to use the lightbox/slimbox as a general exchange for the standard popup-script. This way you get a lightbox for every image marked with "Click-enlarge". If more than one image is existent it's automatically an imageset. Of course you don't lose the other options (if set), they are still taken into account!
 	enableGlobally = 1
-	
+
 	# cat=perfectlightbox/enable/e5; type=boolean; label= Ignore unique ids?: You can set this to on when you want to ALWAYS display ALL images on a page in an imageset. (For all images with exactly the same options enabled!)
 	ignoreUids = 0
-	
+
 	# cat=perfectlightbox/enable/e6; type=boolean; label= Enable lightbox for tt_news.displaySingle?: If set lightbox will also work for the single-view of tt_news.
 	ttnews.enableSingle = 1
-	
+
 	# cat=perfectlightbox/enable/e7; type=boolean; label= Enable lightbox for tt_news.displayList?: If set lightbox will also work for the list-view of tt_news.
 	ttnews.enableList = 0
-	
+
 	# cat=perfectlightbox/enable/e8; type=boolean; label= Enable lightbox for tt_news.displayLatest?: If set lightbox will also work for the latest-view of tt_news.
 	ttnews.enableLatest = 0
 
-	# cat=perfectlightbox/file/f01; type=file[css]; label= Path to the CSS File: CSS file for the Lightbox/Slimbox. See EXT:perfectlightbox/res/css/slightbox.css for an example.	
+	# cat=perfectlightbox/file/f01; type=file[css]; label= Path to the CSS File: CSS file for the Lightbox/Slimbox. See EXT:perfectlightbox/res/css/slightbox.css for an example.
 	cssPath = EXT:perfectlightbox/res/css/slightbox.css
 
 	# cat=perfectlightbox/file/f02; type=file[js]; label= Path to Prototype: You can change this if you need to modify prototype.
 	prototypePath = EXT:perfectlightbox/res/js/prototype.1.7.0.yui.js
-	
+
 	# cat=perfectlightbox/file/f03; type=file[js]; label= Path to Scriptaculous: You can change this if you need to modify scriptaculous.
 	scriptaculousPath = EXT:perfectlightbox/res/js/scriptaculous.js
-	
+
 	# cat=perfectlightbox/file/f04; type=file[js]; label= Path to the Lightbox Script: WARNING: Refer to the original file at EXT:perfectlightbox/res/js/lightbox.2.0.4.js for the changes made in there (added localisation, presentation mode, slideshow, etc...)
 	lightboxPath = EXT:perfectlightbox/res/js/lightbox.2.0.5.yui.js
-	
+
 	# cat=perfectlightbox/file/f05; type=file[js]; label= Path to MooTools: You can change this if you need to modify mootools.
 	mootoolsPath = EXT:perfectlightbox/res/js/mootools.core.1.3.1.yui.js
-	
+
 	# cat=perfectlightbox/file/f06; type=file[js]; label= Path to the Slimbox Script: WARNING: Refer to the original file at EXT:perfectlightbox/res/js/slimbox.1.7.1.js for the changes made in there (added localisation, presentation mode, slideshow, etc...)
 	slimboxPath = EXT:perfectlightbox/res/js/slimbox.1.7.1.yui.js
-	
+
 	# cat=perfectlightbox/file/f07; type=file[js]; label= Path to JQuery: You can change this if you need to modify jquery.
 	jqueryPath = EXT:perfectlightbox/res/js/jquery.1.5.1.min.js
-	
-	# cat=perfectlightbox/file/f08; type=file[js]; label= Path to the Slimbox2 Script: WARNING: Refer to the original file at EXT:perfectlightbox/res/js/slimbox.2.0.4.js for the changes made in there (added localisation, presentation mode, slideshow, etc...)
-	slimbox2Path = EXT:perfectlightbox/res/js/slimbox.2.0.4.yui.js
+
+	# cat=perfectlightbox/file/f08; type=file[js]; label= Path to the Slimbox2 Script: WARNING: Refer to the original file at EXT:perfectlightbox/res/js/slimbox.2.0.5.js for the changes made in there (added localisation, presentation mode, slideshow, etc...)
+	slimbox2Path = EXT:perfectlightbox/res/js/slimbox.2.0.5.yui.js
 
 	# cat=perfectlightbox/dims/d1; type=int+; label= lightBox Max Image Width: Defines the maxwidth of the image shown in the Lightbox.
 	lightBoxMaxW = 900
 
 	# cat=perfectlightbox/dims/d2; type=int+; label= lightBox Max Image Height: Defines the maxheight of the image shown in the Lightbox.
 	lightBoxMaxH = 600
-	
+
 	# cat=perfectlightbox//o1; type=options[titleText,altText,imagecaption]; label= Caption Field: Which tt_content field to use as caption inside the Lightbox.
 	captionField = imagecaption
-	
+
 	# cat=perfectlightbox//o2; type=options[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]; label= Overlay Opacity: This controls the transparency of the shadow overlay.
 	overlayOpacity = 0.8
-	
+
 	# cat=perfectlightbox//o3; type=options[true,false]; label= Loop images?: Choose true if you want an image carousel.
-	loopImages = true	
-	
+	loopImages = true
+
 	# cat=perfectlightbox//o4; type=int+; label= Resize Speed: This controls the speed of the image resizing animations (in milliseconds).
 	resizeSpeed = 400
-	
+
 	# cat=perfectlightbox//o5; type=int+; label= Border Size: Whitespace around image in the Lightbox. If you adjust the padding in the CSS, you will need to update this variable. This is only relevant set for protaculous/lightbox, for mootools/slimbox or jquery/slimbox2 it's ignored.
-	lbBorderSize = 10	
-	
+	lbBorderSize = 10
+
 	# cat=perfectlightbox//o6; type=options[true,false]; label= Allow saving of images?: This toggles whether users are allowed to save the displayed image or not.
 	allowSave = false
-	
+
 	# cat=perfectlightbox//o7; type=options[true,false]; label= Slideshow Autoplay?: This toggles whether slideshows start automatically or only after user request.
 	slideshowAutoplay = false
-	
+
 	# cat=perfectlightbox//o8; type=options[true,false]; label= Slideshow Autoclose?: This toggles whether the lightbox is closed after a slideshow reaches the last image in the set. If set to false the slideshow is just stopped and the lightbox remains active.
 	slideshowAutoclose = true
-	
+
 	# cat=perfectlightbox//o9; type=int+; label= Slideshow interval: The amount of time in milliseconds before a new image is loaded during a slideshow.
 	slideshowInterval = 5000
-	
+
 }
