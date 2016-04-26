@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'perfectlightbox'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.tx_perfectlightbox_activate">Lightbox</label>
+			<label index="tt_content.tx_perfectlightbox_imageset">ImageSet</label>
+			<label index="tt_content.tx_perfectlightbox_presentation">Presentation Mode</label>
+			<label index="tt_content.tx_perfectlightbox_slideshow">Slideshow</label>
+		</languageKey>
+		<languageKey index="dk" type="array">
+			<label index="tt_content.tx_perfectlightbox_activate">Lysbord</label>
+			<label index="tt_content.tx_perfectlightbox_imageset">Billedserie</label>
+			<label index="tt_content.tx_perfectlightbox_presentation">Link til alle</label>
+			<label index="tt_content.tx_perfectlightbox_slideshow">Slideshow</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tt_content.tx_perfectlightbox_activate">Lightbox</label>
+			<label index="tt_content.tx_perfectlightbox_imageset">Gruppieren</label>
+			<label index="tt_content.tx_perfectlightbox_presentation">Präsentationsmodus</label>
+			<label index="tt_content.tx_perfectlightbox_slideshow">Slideshow</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="tt_content.tx_perfectlightbox_activate">Lightbox</label>
+			<label index="tt_content.tx_perfectlightbox_imageset">Groupe d'images</label>
+			<label index="tt_content.tx_perfectlightbox_presentation">Mode présentation</label>
+			<label index="tt_content.tx_perfectlightbox_slideshow">Diaporama</label>
+		</languageKey>
+		<languageKey index="it" type="array">
+			<label index="tt_content.tx_perfectlightbox_activate">Lightbox</label>
+			<label index="tt_content.tx_perfectlightbox_imageset">Gruppo di immagini</label>
+			<label index="tt_content.tx_perfectlightbox_presentation">Modalità presentazione</label>
+			<label index="tt_content.tx_perfectlightbox_slideshow">Slideshow</label>
+		</languageKey>
+		<languageKey index="no" type="array">
+			<label index="tt_content.tx_perfectlightbox_activate">Lysbord</label>
+			<label index="tt_content.tx_perfectlightbox_imageset">Bildeserie</label>
+			<label index="tt_content.tx_perfectlightbox_presentation">Link til alle</label>
+			<label index="tt_content.tx_perfectlightbox_slideshow">Slideshow</label>
+		</languageKey>
+	</data>
+</T3locallang>

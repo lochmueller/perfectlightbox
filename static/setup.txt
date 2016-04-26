@@ -1,0 +1,214 @@
+page.headerData.1337 = COA
+page.headerData.1337.1 = TEXT
+page.headerData.1337.1.value = <link rel="stylesheet" href="{path:{$plugin.perfectlightbox.cssPath}}" type="text/css" media="screen,projection" />
+page.headerData.1337.1.insertData = 1
+
+[globalVar = LIT:mootools = {$plugin.perfectlightbox.libraryToUse}] AND [globalVar = LIT:1 = {$plugin.perfectlightbox.includeJSLibrarys}]
+page.headerData.1337.2 = TEXT
+page.headerData.1337.2.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.mootoolsPath}}"></script>	
+page.headerData.1337.2.insertData = 1
+[global]
+
+[globalVar = LIT:mootools = {$plugin.perfectlightbox.libraryToUse}]
+page.headerData.1337.3 = TEXT
+page.headerData.1337.3.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.slimboxPath}}"></script>
+page.headerData.1337.3.insertData = 1
+page.headerData.1337.4 = COA
+page.headerData.1337.4.1 = TEXT
+page.headerData.1337.4.1.value (
+
+	SlimboxOptions.resizeSpeed = {$plugin.perfectlightbox.resizeSpeed};
+	SlimboxOptions.overlayOpacity = {$plugin.perfectlightbox.overlayOpacity};
+	SlimboxOptions.loop = {$plugin.perfectlightbox.loopImages};
+	SlimboxOptions.allowSave = {$plugin.perfectlightbox.allowSave};
+	SlimboxOptions.slideshowAutoplay = {$plugin.perfectlightbox.slideshowAutoplay};
+	SlimboxOptions.slideshowInterval = {$plugin.perfectlightbox.slideshowInterval};
+	SlimboxOptions.slideshowAutoclose = {$plugin.perfectlightbox.slideshowAutoclose};
+	SlimboxOptions.counterText = '{LLL:EXT:perfectlightbox/locallang.xml:image} ###x### {LLL:EXT:perfectlightbox/locallang.xml:of} ###y###';
+)
+page.headerData.1337.4.1.insertData = 1
+page.headerData.1337.4.stdWrap.dataWrap = <script type="text/javascript">|</script>
+[global]
+
+[globalVar = LIT:protaculous = {$plugin.perfectlightbox.libraryToUse}] AND [globalVar = LIT:1 = {$plugin.perfectlightbox.includeJSLibrarys}]
+page.headerData.1337.5 = TEXT
+page.headerData.1337.5.value (
+<script type="text/javascript" src="{path:{$plugin.perfectlightbox.prototypePath}}"></script>
+<script type="text/javascript" src="{path:{$plugin.perfectlightbox.scriptaculousPath}}?load=effects,builder"></script>
+)
+page.headerData.1337.5.insertData = 1
+[global]
+
+[globalVar = LIT:protaculous = {$plugin.perfectlightbox.libraryToUse}]
+page.headerData.1337.6 = TEXT
+page.headerData.1337.6.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.lightboxPath}}"></script>
+page.headerData.1337.6.insertData = 1
+page.headerData.1337.7 = COA
+page.headerData.1337.7.1 = TEXT
+page.headerData.1337.7.1.value (
+
+	LightboxOptions.borderSize = {$plugin.perfectlightbox.lbBorderSize};
+	LightboxOptions.resizeSpeed = {$plugin.perfectlightbox.resizeSpeed};
+	LightboxOptions.overlayOpacity = {$plugin.perfectlightbox.overlayOpacity};
+	LightboxOptions.loop = {$plugin.perfectlightbox.loopImages};
+	LightboxOptions.allowSave = {$plugin.perfectlightbox.allowSave};
+	LightboxOptions.slideshowAutoplay = {$plugin.perfectlightbox.slideshowAutoplay};
+	LightboxOptions.slideshowInterval = {$plugin.perfectlightbox.slideshowInterval};
+	LightboxOptions.slideshowAutoclose = {$plugin.perfectlightbox.slideshowAutoclose};
+	LightboxOptions.labelImage = '{LLL:EXT:perfectlightbox/locallang.xml:image}';
+	LightboxOptions.labelOf = '{LLL:EXT:perfectlightbox/locallang.xml:of}';
+)
+page.headerData.1337.7.1.insertData = 1
+page.headerData.1337.7.stdWrap.dataWrap = <script type="text/javascript">|</script>
+[global]
+
+[globalVar = LIT:jquery = {$plugin.perfectlightbox.libraryToUse}] AND [globalVar = LIT:1 = {$plugin.perfectlightbox.includeJSLibrarys}]
+page.headerData.1337.8 = TEXT
+page.headerData.1337.8.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.jqueryPath}}"></script>	
+page.headerData.1337.8.insertData = 1
+[global]
+
+[globalVar = LIT:jquery = {$plugin.perfectlightbox.libraryToUse}]
+page.headerData.1337.9 = TEXT
+page.headerData.1337.9.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.slimbox2Path}}"></script>
+page.headerData.1337.9.insertData = 1
+page.headerData.1337.10 = COA
+page.headerData.1337.10.1 = TEXT
+page.headerData.1337.10.1.value (
+
+	SlimboxOptions.resizeSpeed = {$plugin.perfectlightbox.resizeSpeed};
+	SlimboxOptions.overlayOpacity = {$plugin.perfectlightbox.overlayOpacity};
+	SlimboxOptions.loop = {$plugin.perfectlightbox.loopImages};
+	SlimboxOptions.allowSave = {$plugin.perfectlightbox.allowSave};
+	SlimboxOptions.slideshowAutoplay = {$plugin.perfectlightbox.slideshowAutoplay};
+	SlimboxOptions.slideshowInterval = {$plugin.perfectlightbox.slideshowInterval};
+	SlimboxOptions.slideshowAutoclose = {$plugin.perfectlightbox.slideshowAutoclose};
+	SlimboxOptions.counterText = '{LLL:EXT:perfectlightbox/locallang.xml:image} ###x### {LLL:EXT:perfectlightbox/locallang.xml:of} ###y###';
+)
+page.headerData.1337.10.1.insertData = 1
+page.headerData.1337.10.stdWrap.dataWrap = <script type="text/javascript">|</script>
+[global]
+
+
+
+### Including the userfunc needed for the final link-manipulation (adding the lightbox-vars)
+### It also contains the function user_ttnewsImageMarkerFunc to enable correct splitting of caption/alttest/titletext for news-images
+includeLibs.perfectlightbox = EXT:perfectlightbox/class.tx_perfectlightbox.php
+
+tt_content.image.20.1 {
+	titleText.override.field = {$plugin.perfectlightbox.captionField}
+
+	# compatible to 6.2 release
+	titleText.override {
+		split.token.char = 10
+		split.token.if.isTrue = {$styles.content.imgtext.imageTextSplit}
+		split.returnKey.data = register : IMAGE_NUM_CURRENT
+	}
+
+	titleText.override.htmlSpecialChars = 1
+	titleText.override.if.isTrue.field = tx_perfectlightbox_activate
+	imageLinkWrap {	
+		typolink {
+			### Only split when links are set... otherwise lightbox will ONLY work for the first image...
+			parameter.listNum.stdWrap.if.isTrue.field = image_link
+				
+			### This returns a link, pointing to the path + name of the original image / resized lightbox image (if maxH or maxW is reached)
+			### Overriding ONLY when imagezoom AND lightbox are activated AND no link is set
+			parameter.override.cObject = IMG_RESOURCE
+			parameter.override.cObject.file.import.data = TSFE:lastImageInfo|origFile
+			parameter.override.cObject.file.maxW = {$plugin.perfectlightbox.lightBoxMaxW}
+			parameter.override.cObject.file.maxH = {$plugin.perfectlightbox.lightBoxMaxH}		
+			parameter.override.if.isTrue.field = image_zoom
+			parameter.override.if.isTrue.field = tx_perfectlightbox_activate
+			parameter.override.if.isFalse.field = image_link
+
+			#ATagParams.if.isTrue.field = image_zoom
+			#ATagParams.if.isTrue.field = tx_perfectlightbox_activate
+			#ATagParams.if.isFalse.field = image_link
+			
+			### Now the userfunc does the dirty work
+			userFunc = tx_perfectlightbox->main
+		}
+	}
+}
+
+
+
+### This is the config if lightbox should be globally used
+[globalVar = LIT:1 = {$plugin.perfectlightbox.enableGlobally}]
+tt_content.image.20.1 {
+	titleText.override.if.isTrue.field = image_zoom
+	imageLinkWrap {	
+		typolink {
+			parameter.override.cObject = IMG_RESOURCE
+			parameter.override.cObject.file.import.data = TSFE:lastImageInfo|origFile
+			parameter.override.cObject.file.maxW = {$plugin.perfectlightbox.lightBoxMaxW}
+			parameter.override.cObject.file.maxH = {$plugin.perfectlightbox.lightBoxMaxH}		
+			parameter.override.if.isTrue.field = image_zoom
+			parameter.override.if.isFalse.field = image_link
+
+			#ATagParams.if.isTrue.field = image_zoom
+			#ATagParams.if.isFalse.field = image_link
+			
+			userFunc = tx_perfectlightbox->useGlobal
+		}
+	}
+}
+[global]
+
+### 
+[globalVar = LIT:1 = {$plugin.perfectlightbox.ignoreUids}]
+tt_content.image.20.1.imageLinkWrap.typolink.userFunc.ignoreUid = 1
+[global]
+
+### If dam_ttnews is also loaded do not include the imageMarkerFunc
+#[globalString = TYPO3_LOADED_EXT|tt_news|type=*] AND [globalString = TYPO3_LOADED_EXT|dam_ttnews|type=*]
+### Do nothing
+#[else]
+plugin.tt_news.imageMarkerFunc = tx_perfectlightbox->user_ImageMarkerFunc
+#[global]
+
+##### BEN: Due to the latest changes in tt_news the imageMarkerFunc isn't working anymore (Rupert added a new function to process
+##### SINGLE differently (optionsplit). So everythings broken for now.
+
+temp.imageLinkWrap = 1
+temp.imageLinkWrap {
+	enable = 1	
+	typolink {
+		
+		### Note the names of the fields! They are different from the ones tt_content uses! (except imagecaption)
+		title.field = imagecaption // imagealttext // imagetitletext
+		title.split.token.char = 10
+		### This works only with the imageMarkerFunc!
+		title.split.returnKey.data = register : IMAGE_NUM_CURRENT
+		title.htmlSpecialChars = 1
+		
+		parameter.cObject = IMG_RESOURCE
+		parameter.cObject.file.import.data = TSFE:lastImageInfo|origFile
+		parameter.cObject.file.maxW = {$plugin.perfectlightbox.lightBoxMaxW}
+		parameter.cObject.file.maxH = {$plugin.perfectlightbox.lightBoxMaxH}		
+		
+		ATagParams = rel="lightbox[lb{field:uid}]"
+		ATagParams.insertData = 1
+	}
+}
+[globalVar = LIT:1 = {$plugin.perfectlightbox.ttnews.enableSingle}]
+plugin.tt_news.displaySingle.image.imageLinkWrap >
+plugin.tt_news.displaySingle.image.imageLinkWrap < temp.imageLinkWrap
+[global]
+
+[globalVar = LIT:1 = {$plugin.perfectlightbox.ttnews.enableList}]
+plugin.tt_news.displayList.image.imageLinkWrap >
+plugin.tt_news.displayList.image.imageLinkWrap < temp.imageLinkWrap
+[global]
+
+[globalVar = LIT:1 = {$plugin.perfectlightbox.ttnews.enableLatest}]
+plugin.tt_news.displayLatest.image.imageLinkWrap >
+plugin.tt_news.displayLatest.image.imageLinkWrap < temp.imageLinkWrap
+[global]
+
+### 
+[globalVar = LIT:1 = {$plugin.perfectlightbox.bodyScripts}]
+page.1337 < page.headerData.1337
+page.headerData.1337 >
+[global]
