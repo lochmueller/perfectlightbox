@@ -93,7 +93,7 @@ page.headerData.1337.10.stdWrap.dataWrap = <script type="text/javascript">|</scr
 
 ### Including the userfunc needed for the final link-manipulation (adding the lightbox-vars)
 ### It also contains the function user_ttnewsImageMarkerFunc to enable correct splitting of caption/alttest/titletext for news-images
-includeLibs.perfectlightbox = EXT:perfectlightbox/class.tx_perfectlightbox.php
+includeLibs.perfectlightbox = EXT:perfectlightbox/Classes/Perfectlightbox.php
 
 tt_content.image.20.1 {
 	titleText.override.field = {$plugin.perfectlightbox.captionField}
@@ -121,13 +121,9 @@ tt_content.image.20.1 {
 			parameter.override.if.isTrue.field = image_zoom
 			parameter.override.if.isTrue.field = tx_perfectlightbox_activate
 			parameter.override.if.isFalse.field = image_link
-
-			#ATagParams.if.isTrue.field = image_zoom
-			#ATagParams.if.isTrue.field = tx_perfectlightbox_activate
-			#ATagParams.if.isFalse.field = image_link
 			
 			### Now the userfunc does the dirty work
-			userFunc = tx_perfectlightbox->main
+			userFunc = BENIEDIEK\Perfectlightbox\Perfectlightbox->main
 		}
 	}
 }
@@ -146,11 +142,8 @@ tt_content.image.20.1 {
 			parameter.override.cObject.file.maxH = {$plugin.perfectlightbox.lightBoxMaxH}		
 			parameter.override.if.isTrue.field = image_zoom
 			parameter.override.if.isFalse.field = image_link
-
-			#ATagParams.if.isTrue.field = image_zoom
-			#ATagParams.if.isFalse.field = image_link
 			
-			userFunc = tx_perfectlightbox->useGlobal
+			userFunc = BENIEDIEK\Perfectlightbox\Perfectlightbox->useGlobal
 		}
 	}
 }
@@ -165,7 +158,7 @@ tt_content.image.20.1.imageLinkWrap.typolink.userFunc.ignoreUid = 1
 #[globalString = TYPO3_LOADED_EXT|tt_news|type=*] AND [globalString = TYPO3_LOADED_EXT|dam_ttnews|type=*]
 ### Do nothing
 #[else]
-plugin.tt_news.imageMarkerFunc = tx_perfectlightbox->user_ImageMarkerFunc
+plugin.tt_news.imageMarkerFunc = BENIEDIEK\Perfectlightbox\Perfectlightbox->user_ImageMarkerFunc
 #[global]
 
 ##### BEN: Due to the latest changes in tt_news the imageMarkerFunc isn't working anymore (Rupert added a new function to process
