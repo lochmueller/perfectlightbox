@@ -21,13 +21,14 @@
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
+namespace BENIEDIEK\Perfectlightbox;
 
 /**
- * Script 'class.tx_perfectlightbox.php'
+ * Script 'Perfectlightbox.php'
  *
  * @author    Benjamin Niediek <ben(at)channel-eight.de>
  */
-class tx_perfectlightbox
+class Perfectlightbox
 {
 
     var $cObj; // Reference to the calling object.
