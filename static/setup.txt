@@ -1,21 +1,21 @@
-page.headerData.1337 = COA
-page.headerData.1337.1 = TEXT
-page.headerData.1337.1.value = <link rel="stylesheet" href="{path:{$plugin.perfectlightbox.cssPath}}" type="text/css" media="screen,projection" />
-page.headerData.1337.1.insertData = 1
+page.footerData.1337 = COA
+page.footerData.1337.1 = TEXT
+page.footerData.1337.1.value = <link rel="stylesheet" href="{path:{$plugin.perfectlightbox.cssPath}}" type="text/css" media="screen,projection" />
+page.footerData.1337.1.insertData = 1
 
 [globalVar = LIT:mootools = {$plugin.perfectlightbox.libraryToUse}] AND [globalVar = LIT:1 = {$plugin.perfectlightbox.includeJSLibrarys}]
-page.headerData.1337.2 = TEXT
-page.headerData.1337.2.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.mootoolsPath}}"></script>	
-page.headerData.1337.2.insertData = 1
+page.footerData.1337.2 = TEXT
+page.footerData.1337.2.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.mootoolsPath}}"></script>	
+page.footerData.1337.2.insertData = 1
 [global]
 
 [globalVar = LIT:mootools = {$plugin.perfectlightbox.libraryToUse}]
-page.headerData.1337.3 = TEXT
-page.headerData.1337.3.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.slimboxPath}}"></script>
-page.headerData.1337.3.insertData = 1
-page.headerData.1337.4 = COA
-page.headerData.1337.4.1 = TEXT
-page.headerData.1337.4.1.value (
+page.footerData.1337.3 = TEXT
+page.footerData.1337.3.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.slimboxPath}}"></script>
+page.footerData.1337.3.insertData = 1
+page.footerData.1337.4 = COA
+page.footerData.1337.4.1 = TEXT
+page.footerData.1337.4.1.value (
 
 	SlimboxOptions.resizeSpeed = {$plugin.perfectlightbox.resizeSpeed};
 	SlimboxOptions.overlayOpacity = {$plugin.perfectlightbox.overlayOpacity};
@@ -26,26 +26,26 @@ page.headerData.1337.4.1.value (
 	SlimboxOptions.slideshowAutoclose = {$plugin.perfectlightbox.slideshowAutoclose};
 	SlimboxOptions.counterText = '{LLL:EXT:perfectlightbox/locallang.xml:image} ###x### {LLL:EXT:perfectlightbox/locallang.xml:of} ###y###';
 )
-page.headerData.1337.4.1.insertData = 1
-page.headerData.1337.4.stdWrap.dataWrap = <script type="text/javascript">|</script>
+page.footerData.1337.4.1.insertData = 1
+page.footerData.1337.4.stdWrap.dataWrap = <script type="text/javascript">|</script>
 [global]
 
 [globalVar = LIT:protaculous = {$plugin.perfectlightbox.libraryToUse}] AND [globalVar = LIT:1 = {$plugin.perfectlightbox.includeJSLibrarys}]
-page.headerData.1337.5 = TEXT
-page.headerData.1337.5.value (
+page.footerData.1337.5 = TEXT
+page.footerData.1337.5.value (
 <script type="text/javascript" src="{path:{$plugin.perfectlightbox.prototypePath}}"></script>
 <script type="text/javascript" src="{path:{$plugin.perfectlightbox.scriptaculousPath}}?load=effects,builder"></script>
 )
-page.headerData.1337.5.insertData = 1
+page.footerData.1337.5.insertData = 1
 [global]
 
 [globalVar = LIT:protaculous = {$plugin.perfectlightbox.libraryToUse}]
-page.headerData.1337.6 = TEXT
-page.headerData.1337.6.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.lightboxPath}}"></script>
-page.headerData.1337.6.insertData = 1
-page.headerData.1337.7 = COA
-page.headerData.1337.7.1 = TEXT
-page.headerData.1337.7.1.value (
+page.footerData.1337.6 = TEXT
+page.footerData.1337.6.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.lightboxPath}}"></script>
+page.footerData.1337.6.insertData = 1
+page.footerData.1337.7 = COA
+page.footerData.1337.7.1 = TEXT
+page.footerData.1337.7.1.value (
 
 	LightboxOptions.borderSize = {$plugin.perfectlightbox.lbBorderSize};
 	LightboxOptions.resizeSpeed = {$plugin.perfectlightbox.resizeSpeed};
@@ -58,23 +58,23 @@ page.headerData.1337.7.1.value (
 	LightboxOptions.labelImage = '{LLL:EXT:perfectlightbox/locallang.xml:image}';
 	LightboxOptions.labelOf = '{LLL:EXT:perfectlightbox/locallang.xml:of}';
 )
-page.headerData.1337.7.1.insertData = 1
-page.headerData.1337.7.stdWrap.dataWrap = <script type="text/javascript">|</script>
+page.footerData.1337.7.1.insertData = 1
+page.footerData.1337.7.stdWrap.dataWrap = <script type="text/javascript">|</script>
 [global]
 
 [globalVar = LIT:jquery = {$plugin.perfectlightbox.libraryToUse}] AND [globalVar = LIT:1 = {$plugin.perfectlightbox.includeJSLibrarys}]
-page.headerData.1337.8 = TEXT
-page.headerData.1337.8.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.jqueryPath}}"></script>	
-page.headerData.1337.8.insertData = 1
+page.footerData.1337.8 = TEXT
+page.footerData.1337.8.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.jqueryPath}}"></script>	
+page.footerData.1337.8.insertData = 1
 [global]
 
 [globalVar = LIT:jquery = {$plugin.perfectlightbox.libraryToUse}]
-page.headerData.1337.9 = TEXT
-page.headerData.1337.9.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.slimbox2Path}}"></script>
-page.headerData.1337.9.insertData = 1
-page.headerData.1337.10 = COA
-page.headerData.1337.10.1 = TEXT
-page.headerData.1337.10.1.value (
+page.footerData.1337.9 = TEXT
+page.footerData.1337.9.value = <script type="text/javascript" src="{path:{$plugin.perfectlightbox.slimbox2Path}}"></script>
+page.footerData.1337.9.insertData = 1
+page.footerData.1337.10 = COA
+page.footerData.1337.10.1 = TEXT
+page.footerData.1337.10.1.value (
 
 	SlimboxOptions.resizeSpeed = {$plugin.perfectlightbox.resizeSpeed};
 	SlimboxOptions.overlayOpacity = {$plugin.perfectlightbox.overlayOpacity};
@@ -85,8 +85,8 @@ page.headerData.1337.10.1.value (
 	SlimboxOptions.slideshowAutoclose = {$plugin.perfectlightbox.slideshowAutoclose};
 	SlimboxOptions.counterText = '{LLL:EXT:perfectlightbox/locallang.xml:image} ###x### {LLL:EXT:perfectlightbox/locallang.xml:of} ###y###';
 )
-page.headerData.1337.10.1.insertData = 1
-page.headerData.1337.10.stdWrap.dataWrap = <script type="text/javascript">|</script>
+page.footerData.1337.10.1.insertData = 1
+page.footerData.1337.10.stdWrap.dataWrap = <script type="text/javascript">|</script>
 [global]
 
 
@@ -121,7 +121,7 @@ tt_content.image.20.1 {
 			parameter.override.if.isTrue.field = image_zoom
 			parameter.override.if.isTrue.field = tx_perfectlightbox_activate
 			parameter.override.if.isFalse.field = image_link
-			
+
 			### Now the userfunc does the dirty work
 			userFunc = BENIEDIEK\Perfectlightbox\Perfectlightbox->main
 		}
@@ -142,7 +142,7 @@ tt_content.image.20.1 {
 			parameter.override.cObject.file.maxH = {$plugin.perfectlightbox.lightBoxMaxH}		
 			parameter.override.if.isTrue.field = image_zoom
 			parameter.override.if.isFalse.field = image_link
-			
+
 			userFunc = BENIEDIEK\Perfectlightbox\Perfectlightbox->useGlobal
 		}
 	}
@@ -202,6 +202,6 @@ plugin.tt_news.displayLatest.image.imageLinkWrap < temp.imageLinkWrap
 
 ### 
 [globalVar = LIT:1 = {$plugin.perfectlightbox.bodyScripts}]
-page.1337 < page.headerData.1337
-page.headerData.1337 >
+page.1337 < page.footerData.1337
+page.footerData.1337 >
 [global]
