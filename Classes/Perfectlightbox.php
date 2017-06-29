@@ -29,16 +29,16 @@ class Perfectlightbox
         if ($this->cObj->data['tx_perfectlightbox_activate'] == 1) {
             $lightboxParams = 'rel="lightbox"';
         }
-        if ($this->cObj->data['tx_perfectlightbox_activate'] == 1 AND $this->cObj->data['tx_perfectlightbox_imageset'] == 1) {
+        if ($this->cObj->data['tx_perfectlightbox_activate'] == 1 and $this->cObj->data['tx_perfectlightbox_imageset'] == 1) {
             $lightboxParams = 'rel="lightbox[lb' . $uid . ']"';
         }
-        if ($this->cObj->data['tx_perfectlightbox_activate'] == 1 AND $this->cObj->data['tx_perfectlightbox_imageset'] == 1 AND $this->cObj->data['tx_perfectlightbox_presentation'] == 1) {
+        if ($this->cObj->data['tx_perfectlightbox_activate'] == 1 and $this->cObj->data['tx_perfectlightbox_imageset'] == 1 and $this->cObj->data['tx_perfectlightbox_presentation'] == 1) {
             $lightboxParams = 'rel="lightbox[presentlb' . $uid . ']"';
         }
-        if ($this->cObj->data['tx_perfectlightbox_activate'] == 1 AND $this->cObj->data['tx_perfectlightbox_imageset'] == 1 AND $this->cObj->data['tx_perfectlightbox_presentation'] == 0 AND $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
+        if ($this->cObj->data['tx_perfectlightbox_activate'] == 1 and $this->cObj->data['tx_perfectlightbox_imageset'] == 1 and $this->cObj->data['tx_perfectlightbox_presentation'] == 0 and $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
             $lightboxParams = 'rel="lightbox[lb' . $uid . 'slideshow]"';
         }
-        if ($this->cObj->data['tx_perfectlightbox_activate'] == 1 AND $this->cObj->data['tx_perfectlightbox_imageset'] == 1 AND $this->cObj->data['tx_perfectlightbox_presentation'] == 1 AND $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
+        if ($this->cObj->data['tx_perfectlightbox_activate'] == 1 and $this->cObj->data['tx_perfectlightbox_imageset'] == 1 and $this->cObj->data['tx_perfectlightbox_presentation'] == 1 and $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
             $lightboxParams = 'rel="lightbox[presentlb' . $uid . 'slideshow]"';
         }
         if (trim($this->cObj->data['image_link']) != '') {
@@ -59,13 +59,13 @@ class Perfectlightbox
         if ($this->cObj->data['image_zoom'] == 1) {
             $lightboxParams = 'rel="lightbox[lb' . $uid . ']"';
         }
-        if ($this->cObj->data['image_zoom'] == 1 AND $this->cObj->data['tx_perfectlightbox_presentation'] == 1) {
+        if ($this->cObj->data['image_zoom'] == 1 and $this->cObj->data['tx_perfectlightbox_presentation'] == 1) {
             $lightboxParams = 'rel="lightbox[presentlb' . $uid . ']"';
         }
-        if ($this->cObj->data['image_zoom'] == 1 AND $this->cObj->data['tx_perfectlightbox_presentation'] == 0 AND $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
+        if ($this->cObj->data['image_zoom'] == 1 and $this->cObj->data['tx_perfectlightbox_presentation'] == 0 and $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
             $lightboxParams = 'rel="lightbox[lb' . $uid . 'slideshow]"';
         }
-        if ($this->cObj->data['image_zoom'] == 1 AND $this->cObj->data['tx_perfectlightbox_presentation'] == 1 AND $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
+        if ($this->cObj->data['image_zoom'] == 1 and $this->cObj->data['tx_perfectlightbox_presentation'] == 1 and $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
             $lightboxParams = 'rel="lightbox[presentlb' . $uid . 'slideshow]"';
         }
         if (trim($this->cObj->data['image_link']) != '') {
@@ -132,7 +132,6 @@ class Perfectlightbox
                 break;
             }
             if ($val) {
-
                 $lConf['image.']['altText'] = $imgsAltTexts[$cc];
                 $lConf['image.']['titleText'] = $imgsTitleTexts[$cc];
                 $lConf['image.']['file'] = 'uploads/pics/' . $val;
@@ -154,16 +153,20 @@ class Perfectlightbox
                 // END.
             }
 
-            $theImgCode .= $pObj->local_cObj->IMAGE($lConf['image.']) . $pObj->local_cObj->stdWrap($imgsCaptions[$cc],
-                    $lConf['caption_stdWrap.']);
+            $theImgCode .= $pObj->local_cObj->IMAGE($lConf['image.']) . $pObj->local_cObj->stdWrap(
+                $imgsCaptions[$cc],
+                $lConf['caption_stdWrap.']
+            );
             $cc++;
         }
         $markerArray['###NEWS_IMAGE###'] = '';
         if ($cc) {
             $markerArray['###NEWS_IMAGE###'] = $pObj->local_cObj->wrap(trim($theImgCode), $lConf['imageWrapIfAny']);
         } else {
-            $markerArray['###NEWS_IMAGE###'] = $pObj->local_cObj->stdWrap($markerArray['###NEWS_IMAGE###'],
-                $lConf['image.']['noImage_stdWrap.']);
+            $markerArray['###NEWS_IMAGE###'] = $pObj->local_cObj->stdWrap(
+                $markerArray['###NEWS_IMAGE###'],
+                $lConf['image.']['noImage_stdWrap.']
+            );
         }
         return $markerArray;
     }
