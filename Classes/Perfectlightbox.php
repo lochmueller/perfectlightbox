@@ -26,20 +26,21 @@ class Perfectlightbox
     {
         $uid = (1 == intval($conf['ignoreUid']) ? '' : $this->cObj->data['uid']);
         $lightboxParams = '';
-        if ($this->cObj->data['tx_perfectlightbox_activate'] == 1) {
+        if ($this->getConfiguration('tx_perfectlightbox_activate')) {
             $lightboxParams = 'rel="lightbox"';
-        }
-        if ($this->cObj->data['tx_perfectlightbox_activate'] == 1 and $this->cObj->data['tx_perfectlightbox_imageset'] == 1) {
-            $lightboxParams = 'rel="lightbox[lb' . $uid . ']"';
-        }
-        if ($this->cObj->data['tx_perfectlightbox_activate'] == 1 and $this->cObj->data['tx_perfectlightbox_imageset'] == 1 and $this->cObj->data['tx_perfectlightbox_presentation'] == 1) {
-            $lightboxParams = 'rel="lightbox[presentlb' . $uid . ']"';
-        }
-        if ($this->cObj->data['tx_perfectlightbox_activate'] == 1 and $this->cObj->data['tx_perfectlightbox_imageset'] == 1 and $this->cObj->data['tx_perfectlightbox_presentation'] == 0 and $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
-            $lightboxParams = 'rel="lightbox[lb' . $uid . 'slideshow]"';
-        }
-        if ($this->cObj->data['tx_perfectlightbox_activate'] == 1 and $this->cObj->data['tx_perfectlightbox_imageset'] == 1 and $this->cObj->data['tx_perfectlightbox_presentation'] == 1 and $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
-            $lightboxParams = 'rel="lightbox[presentlb' . $uid . 'slideshow]"';
+            if ($this->getConfiguration('tx_perfectlightbox_imageset')) {
+                $lightboxParams = 'rel="lightbox[lb' . $uid . ']"';
+                $presentation = $this->getConfiguration('tx_perfectlightbox_presentation');
+                if ($presentation) {
+                    $lightboxParams = 'rel="lightbox[presentlb' . $uid . ']"';
+                }
+                if (!$presentation && $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
+                    $lightboxParams = 'rel="lightbox[lb' . $uid . 'slideshow]"';
+                }
+                if ($presentation && $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
+                    $lightboxParams = 'rel="lightbox[presentlb' . $uid . 'slideshow]"';
+                }
+            }
         }
         if (trim($this->cObj->data['image_link']) != '') {
             return $content["TAG"];
@@ -56,17 +57,19 @@ class Perfectlightbox
     {
         $uid = (1 == intval($conf['ignoreUid']) ? '' : $this->cObj->data['uid']);
         $lightboxParams = '';
-        if ($this->cObj->data['image_zoom'] == 1) {
+        if ($this->getConfiguration('image_zoom')) {
             $lightboxParams = 'rel="lightbox[lb' . $uid . ']"';
-        }
-        if ($this->cObj->data['image_zoom'] == 1 and $this->cObj->data['tx_perfectlightbox_presentation'] == 1) {
-            $lightboxParams = 'rel="lightbox[presentlb' . $uid . ']"';
-        }
-        if ($this->cObj->data['image_zoom'] == 1 and $this->cObj->data['tx_perfectlightbox_presentation'] == 0 and $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
-            $lightboxParams = 'rel="lightbox[lb' . $uid . 'slideshow]"';
-        }
-        if ($this->cObj->data['image_zoom'] == 1 and $this->cObj->data['tx_perfectlightbox_presentation'] == 1 and $this->cObj->data['tx_perfectlightbox_slideshow'] == 1) {
-            $lightboxParams = 'rel="lightbox[presentlb' . $uid . 'slideshow]"';
+            $presentation = $this->getConfiguration('tx_perfectlightbox_presentation');
+            $slideshow = $this->getConfiguration('tx_perfectlightbox_slideshow');
+            if ($presentation) {
+                $lightboxParams = 'rel="lightbox[presentlb' . $uid . ']"';
+            }
+            if (!$presentation && $slideshow) {
+                $lightboxParams = 'rel="lightbox[lb' . $uid . 'slideshow]"';
+            }
+            if ($presentation && $slideshow) {
+                $lightboxParams = 'rel="lightbox[presentlb' . $uid . 'slideshow]"';
+            }
         }
         if (trim($this->cObj->data['image_link']) != '') {
             return $content["TAG"];
@@ -75,11 +78,23 @@ class Perfectlightbox
     }
 
     /**
+     * Get the configuration value
+     *
+     * @param string $name
+     *
+     * @return bool
+     */
+    protected function getConfiguration($name)
+    {
+        return 1 === (int)$this->cObj->data[$name];
+    }
+
+    /**
      * Example function that sets the register var "IMAGE_NUM_CURRENT" to the the current image number.
      *
      * BEWARE: Since tt_news 3.0 this won't work until Rupert updates hooks for marker-processing
      *
-     * @param    array $paramArray : $markerArray and $config of the current news item in an array
+     * @param    array $paramArray : $markerArray && $config of the current news item in an array
      * @param    [type]        $conf: ...
      *
      * @return    array        the processed markerArray
