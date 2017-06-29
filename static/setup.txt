@@ -202,6 +202,6 @@ plugin.tt_news.displayLatest.image.imageLinkWrap < temp.imageLinkWrap
 
 ### 
 [globalVar = LIT:1 = {$plugin.perfectlightbox.bodyScripts}]
-page.1337 < page.headerData.1337
+page.footerData.1337 < page.headerData.1337
 page.headerData.1337 >
 [global]
