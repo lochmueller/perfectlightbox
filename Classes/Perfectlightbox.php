@@ -1,26 +1,5 @@
 <?php
-/***************************************************************
- *  Copyright notice
- *
- *  (c) 2007 Benjamin Niediek <ben(at)channel-eight.de>
- *  All rights reserved
- *
- *  This script is part of the Typo3 project. The Typo3 project is
- *  free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  The GNU General Public License can be found at
- *  http://www.gnu.org/copyleft/gpl.html.
- *
- *  This script is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  This copyright notice MUST APPEAR in all copies of the script!
- ***************************************************************/
+
 namespace BENIEDIEK\Perfectlightbox;
 
 /**
@@ -31,8 +10,18 @@ namespace BENIEDIEK\Perfectlightbox;
 class Perfectlightbox
 {
 
-    var $cObj; // Reference to the calling object.
+    /**
+     * Reference to the calling object.
+     *
+     * @var
+     */
+    var $cObj;
 
+    /**
+     * @param $content
+     * @param $conf
+     * @return string
+     */
     function main($content, $conf)
     {
         $uid = (1 == intval($conf['ignoreUid']) ? '' : $this->cObj->data['uid']);
@@ -58,6 +47,11 @@ class Perfectlightbox
         return '<a href="' . $content["url"] . '"' . $content["targetParams"] . ' ' . $content["aTagParams"] . ' ' . $lightboxParams . '>';
     }
 
+    /**
+     * @param $content
+     * @param $conf
+     * @return string
+     */
     function useGlobal($content, $conf)
     {
         $uid = (1 == intval($conf['ignoreUid']) ? '' : $this->cObj->data['uid']);
@@ -90,8 +84,6 @@ class Perfectlightbox
      *
      * @return    array        the processed markerArray
      */
-
-
     function user_ImageMarkerFunc($paramArray, $conf)
     {
         $markerArray = $paramArray[0];
