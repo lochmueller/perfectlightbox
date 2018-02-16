@@ -15,14 +15,14 @@ class Perfectlightbox
      *
      * @var
      */
-    var $cObj;
+    public $cObj;
 
     /**
      * @param $content
      * @param $conf
      * @return string
      */
-    function main($content, $conf)
+    public function main($content, $conf)
     {
         $uid = (1 == intval($conf['ignoreUid']) ? '' : $this->cObj->data['uid']);
         $lightboxParams = '';
@@ -53,7 +53,7 @@ class Perfectlightbox
      * @param $conf
      * @return string
      */
-    function useGlobal($content, $conf)
+    public function useGlobal($content, $conf)
     {
         $uid = (1 == intval($conf['ignoreUid']) ? '' : $this->cObj->data['uid']);
         $lightboxParams = '';
@@ -99,7 +99,7 @@ class Perfectlightbox
      *
      * @return    array        the processed markerArray
      */
-    function user_ImageMarkerFunc($paramArray, $conf)
+    public function imageMarkerFunc($paramArray, $conf)
     {
         $markerArray = $paramArray[0];
         $lConf = $paramArray[1];

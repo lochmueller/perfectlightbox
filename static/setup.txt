@@ -158,7 +158,7 @@ tt_content.image.20.1.imageLinkWrap.typolink.userFunc.ignoreUid = 1
 #[globalString = TYPO3_LOADED_EXT|tt_news|type=*] AND [globalString = TYPO3_LOADED_EXT|dam_ttnews|type=*]
 ### Do nothing
 #[else]
-plugin.tt_news.imageMarkerFunc = BENIEDIEK\Perfectlightbox\Perfectlightbox->user_ImageMarkerFunc
+plugin.tt_news.imageMarkerFunc = BENIEDIEK\Perfectlightbox\Perfectlightbox->imageMarkerFunc
 #[global]
 
 ##### BEN: Due to the latest changes in tt_news the imageMarkerFunc isn't working anymore (Rupert added a new function to process
