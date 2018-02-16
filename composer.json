@@ -1,7 +1,7 @@
 {
   "name": "lochmueller/perfectlightbox",
   "type": "typo3-cms-extension",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "",
   "autoload": {
     "psr-4": {
@@ -27,14 +27,15 @@
   ],
   "require": {
     "php": ">=7.0.0",
-    "typo3/cms-core": "~7.6.0||~8.7.0||dev-master"
+    "typo3/cms-core": "~7.6.0||~8.7.0||dev-master",
+    "typo3/cms": "^7.6.0"
   },
   "replace": {
     "perfectlightbox": "self.version",
     "typo3-ter/perfectlightbox": "self.version"
   },
   "homepage": "https://github.com/beniediek/perfectlightbox",
-  "license": "GPL-2.0+",
+  "license": "GPL-2.0-or-later",
   "support": {
     "issues": "https://github.com/beniediek/perfectlightbox/issues"
   },
@@ -59,4 +60,3 @@
     }
   }
 }
-
