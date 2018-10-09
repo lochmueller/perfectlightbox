@@ -27,17 +27,16 @@
   ],
   "require": {
     "php": ">=7.0.0",
-    "typo3/cms-core": "~7.6.0||~8.7.0||dev-master",
-    "typo3/cms": "^7.6.0"
+    "typo3/cms-core": "~7.6.0||~8.7.0||dev-master"
   },
   "replace": {
     "perfectlightbox": "self.version",
     "typo3-ter/perfectlightbox": "self.version"
   },
-  "homepage": "https://github.com/beniediek/perfectlightbox",
+  "homepage": "https://github.com/lochmueller/perfectlightbox",
   "license": "GPL-2.0-or-later",
   "support": {
-    "issues": "https://github.com/beniediek/perfectlightbox/issues"
+    "issues": "https://github.com/lochmueller/perfectlightbox/issues"
   },
   "require-dev": {
     "namelesscoder/typo3-repository-client": "1.2.0",
