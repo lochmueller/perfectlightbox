@@ -168,7 +168,7 @@ class Perfectlightbox
                 // END.
             }
 
-            $theImgCode .= $pObj->local_cObj->IMAGE($lConf['image.']) . $pObj->local_cObj->stdWrap(
+            $theImgCode .= $pObj->local_cObj->cObjGetSingle('IMAGE', $lConf['image.']) . $pObj->local_cObj->stdWrap(
                 $imgsCaptions[$cc],
                 $lConf['caption_stdWrap.']
             );
