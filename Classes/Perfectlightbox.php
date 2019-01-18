@@ -142,7 +142,7 @@ class Perfectlightbox
             $imgsTitleTexts = array_slice($imgsTitleTexts, $astart, $imageNum);
         }
 
-        while (list(, $val) = each($imgs)) {
+        foreach ($imgs as $val) {
             if ($cc == $imageNum) {
                 break;
             }
