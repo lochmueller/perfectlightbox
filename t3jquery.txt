@@ -1,2 +1,0 @@
-script=/res/js/slimbox.2.0.4.js
-components=jQuery,Core
