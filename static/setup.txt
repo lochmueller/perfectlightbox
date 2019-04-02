@@ -2,7 +2,7 @@ page.headerData.1337 = COA
 
 [globalVar = LIT:1 = {$plugin.tx_perfectlightbox.includeJQuery}]
 page.headerData.1337.10 = TEXT
-page.headerData.1337.10.value = <script type="text/javascript" src="{path:{$plugin.tx_perfectlightbox.jqueryPath}}"></script>
+page.headerData.1337.10.value = <script src="{path:{$plugin.tx_perfectlightbox.jqueryPath}}"></script>
 page.headerData.1337.10.insertData = 1
 [global]
 
@@ -21,10 +21,10 @@ lib.perfectlightbox.marks.configuration {
 
 [globalVar = LIT:lightbox = {$plugin.tx_perfectlightbox.libraryToUse}]
 page.headerData.1337.20 = TEXT
-page.headerData.1337.20.value = <link rel="stylesheet" href="{path:{$plugin.tx_perfectlightbox.lightboxCssPath}}" type="text/css" media="screen,projection" />
+page.headerData.1337.20.value = <link rel="stylesheet" href="{path:{$plugin.tx_perfectlightbox.lightboxCssPath}}" type="text/css" media="screen" />
 page.headerData.1337.20.insertData = 1
 page.headerData.1337.25 = TEXT
-page.headerData.1337.25.value = <script type="text/javascript" src="{path:{$plugin.tx_perfectlightbox.lightboxJsPath}}"></script>
+page.headerData.1337.25.value = <script src="{path:{$plugin.tx_perfectlightbox.lightboxJsPath}}"></script>
 page.headerData.1337.25.insertData = 1
 
 page.headerData.1337.26 = TEMPLATE
@@ -37,10 +37,10 @@ page.headerData.1337.26 {
 
 [globalVar = LIT:slimbox = {$plugin.tx_perfectlightbox.libraryToUse}]
 page.headerData.1337.30 = TEXT
-page.headerData.1337.30.value = <link rel="stylesheet" href="{path:{$plugin.tx_perfectlightbox.slimboxCssPath}}" type="text/css" media="screen,projection" />
+page.headerData.1337.30.value = <link rel="stylesheet" href="{path:{$plugin.tx_perfectlightbox.slimboxCssPath}}" type="text/css" media="screen" />
 page.headerData.1337.30.insertData = 1
 page.headerData.1337.35 = TEXT
-page.headerData.1337.35.value = <script type="text/javascript" src="{path:{$plugin.tx_perfectlightbox.slimboxJsPath}}"></script>
+page.headerData.1337.35.value = <script src="{path:{$plugin.tx_perfectlightbox.slimboxJsPath}}"></script>
 page.headerData.1337.35.insertData = 1
 page.headerData.1337.36 = TEMPLATE
 page.headerData.1337.36 {
