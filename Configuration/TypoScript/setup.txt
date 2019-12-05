@@ -30,7 +30,7 @@ page.headerData.1337.25.insertData = 1
 page.headerData.1337.26 = TEMPLATE
 page.headerData.1337.26 {
     template = FILE
-    template.file = EXT:perfectlightbox/res/templates/lightbox-options.tpl
+    template.file = EXT:perfectlightbox/Resources/Private/Templates/lightbox-options.tpl
     marks < lib.perfectlightbox.marks.configuration
 }
 [global]
@@ -45,7 +45,7 @@ page.headerData.1337.35.insertData = 1
 page.headerData.1337.36 = TEMPLATE
 page.headerData.1337.36 {
     template = FILE
-    template.file = EXT:perfectlightbox/res/templates/slimbox-options.tpl
+    template.file = EXT:perfectlightbox/Resources/Private/Templates/slimbox-options.tpl
     marks < lib.perfectlightbox.marks.configuration
 }
 [global]
