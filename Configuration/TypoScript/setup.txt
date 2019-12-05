@@ -57,13 +57,6 @@ includeLibs.tx_perfectlightbox = EXT:perfectlightbox/Classes/Perfectlightbox.php
 tt_content.image.20.1 {
 	titleText.override.field = {$plugin.tx_perfectlightbox.captionField}
 
-	# compatible to 6.2 release
-	titleText.override {
-		split.token.char = 10
-		split.token.if.isTrue = {$styles.content.imgtext.imageTextSplit}
-		split.returnKey.data = register : IMAGE_NUM_CURRENT
-	}
-
 	titleText.override.htmlSpecialChars = 1
 	titleText.override.if.isTrue.field = tx_perfectlightbox_activate
 	imageLinkWrap {
@@ -85,6 +78,9 @@ tt_content.image.20.1 {
 			userFunc = BENIEDIEK\Perfectlightbox\Perfectlightbox->main
 		}
 	}
+
+	#	Workarround - https://github.com/lochmueller/perfectlightbox/issues/6
+	titleText.override >
 }
 
 
