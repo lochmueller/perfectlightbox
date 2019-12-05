@@ -1,59 +1,54 @@
 {
-  "name": "lochmueller/perfectlightbox",
-  "type": "typo3-cms-extension",
-  "description": "",
-  "autoload": {
-    "psr-4": {
-      "BENIEDIEK\\Perfectlightbox\\": "Classes/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "BENIEDIEK\\Perfectlightbox\\Tests\\": "Tests",
-      "TYPO3\\CMS\\Core\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/core/Tests/"
-    }
-  },
-  "keywords": [
-    "TYPO3 CMS",
-    "Perfect Lightbox"
-  ],
-  "authors": [
-    {
-      "name": "Ben & Tim",
-      "role": "Developer",
-      "homepage": "https://github.com/beniediek"
-    }
-  ],
-  "require": {
-    "php": ">=7.0.0",
-    "typo3/cms-core": "^8.7||^9.5"
-  },
-  "replace": {
-    "typo3-ter/perfectlightbox": "self.version"
-  },
-  "homepage": "https://github.com/lochmueller/perfectlightbox",
-  "license": "GPL-2.0-or-later",
-  "support": {
-    "issues": "https://github.com/lochmueller/perfectlightbox/issues"
-  },
-  "require-dev": {
-    "namelesscoder/typo3-repository-client": "^2.0",
-    "phpunit/phpunit": "^4.8",
-    "squizlabs/php_codesniffer": "^2.6",
-    "phpmd/phpmd": "^2.4",
-    "scrutinizer/ocular": "^1.3"
-  },
-  "config": {
-    "vendor-dir": ".Build/vendor",
-    "bin-dir": ".Build/bin"
-  },
-  "extra": {
-    "typo3/cms": {
-      "cms-package-dir": "{$vendor-dir}/typo3/cms",
-      "web-dir": ".Build/Web",
-      "Package": {
-        "partOfMinimalUsableSystem": true
-      }
-    }
-  }
+	"name": "lochmueller/perfectlightbox",
+	"type": "typo3-cms-extension",
+	"description": "",
+	"autoload": {
+		"psr-4": {
+			"BENIEDIEK\\Perfectlightbox\\": "Classes/"
+		}
+	},
+	"keywords": [
+		"TYPO3 CMS",
+		"Perfect Lightbox"
+	],
+	"authors": [
+		{
+			"name": "Ben & Tim",
+			"role": "Developer",
+			"homepage": "https://github.com/beniediek"
+		}
+	],
+	"require": {
+		"php": ">=7.0.0",
+		"typo3/cms-core": "^8.7||^9.5"
+	},
+	"replace": {
+		"typo3-ter/perfectlightbox": "self.version"
+	},
+	"homepage": "https://github.com/lochmueller/perfectlightbox",
+	"license": "GPL-2.0-or-later",
+	"support": {
+		"issues": "https://github.com/lochmueller/perfectlightbox/issues"
+	},
+	"require-dev": {
+		"namelesscoder/typo3-repository-client": "^2.0",
+		"typo3/testing-framework": "^2.0",
+		"squizlabs/php_codesniffer": "^2.6",
+		"phpmd/phpmd": "^2.4",
+		"scrutinizer/ocular": "^1.3",
+		"friendsofphp/php-cs-fixer": "^2.14"
+	},
+	"config": {
+		"vendor-dir": ".Build/vendor",
+		"bin-dir": ".Build/bin"
+	},
+	"extra": {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": ".Build/Web",
+			"Package": {
+				"partOfMinimalUsableSystem": true
+			}
+		}
+	}
 }

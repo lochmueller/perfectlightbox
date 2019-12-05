@@ -2,6 +2,9 @@
 
 namespace BENIEDIEK\Perfectlightbox;
 
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Utility\MathUtility;
+
 /**
  * Script 'Perfectlightbox.php'
  *
@@ -86,7 +89,7 @@ class Perfectlightbox
      */
     protected function getConfiguration($name)
     {
-        return 1 === (int)$this->cObj->data[$name];
+        return 1 === (int) $this->cObj->data[$name];
     }
 
     /**
@@ -94,7 +97,7 @@ class Perfectlightbox
      *
      * BEWARE: Since tt_news 3.0 this won't work until Rupert updates hooks for marker-processing
      *
-     * @param    array $paramArray : $markerArray && $config of the current news item in an array
+     * @param array $paramArray : $markerArray && $config of the current news item in an array
      * @param    [type]        $conf: ...
      *
      * @return    array        the processed markerArray
@@ -107,10 +110,10 @@ class Perfectlightbox
         $row = $pObj->local_cObj->data;
 
         $imageNum = isset($lConf['imageCount']) ? $lConf['imageCount'] : 1;
-        $imageNum = \TYPO3\CMS\Core\Utility\MathUtility::forceIntegerInRange($imageNum, 0, 100);
+        $imageNum = MathUtility::forceIntegerInRange($imageNum, 0, 100);
 
         $theImgCode = '';
-        $imgs = \TYPO3\CMS\Core\Utility\GeneralUtility::trimExplode(',', $row['image'], 1);
+        $imgs = GeneralUtility::trimExplode(',', $row['image'], 1);
         $imgsCaptions = explode(chr(10), $row['imagecaption']);
         $imgsAltTexts = explode(chr(10), $row['imagealttext']);
         $imgsTitleTexts = explode(chr(10), $row['imagetitletext']);
@@ -169,9 +172,9 @@ class Perfectlightbox
             }
 
             $theImgCode .= $pObj->local_cObj->cObjGetSingle('IMAGE', $lConf['image.']) . $pObj->local_cObj->stdWrap(
-                $imgsCaptions[$cc],
-                $lConf['caption_stdWrap.']
-            );
+                    $imgsCaptions[$cc],
+                    $lConf['caption_stdWrap.']
+                );
             $cc++;
         }
         $markerArray['###NEWS_IMAGE###'] = '';

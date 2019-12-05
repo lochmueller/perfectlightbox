@@ -1,5 +1,7 @@
 <?php
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 defined('TYPO3_MODE') or die();
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('perfectlightbox', 'static/', 'Perfect Lightbox');
+ExtensionManagementUtility::addStaticFile('perfectlightbox', 'Configuration/TypoScript/', 'Perfect Lightbox');
