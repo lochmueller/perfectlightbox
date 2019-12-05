@@ -14,14 +14,14 @@ $EM_CONF[$_EXTKEY] = [
     'title'        => 'Perfect Lightbox',
     'description'  => 'Click-enlarge images with a lightbox/slimbox based on JQUERY in TYPO3! Single images, imagesets, presentation mode and slideshow supported. Options can be set for each content-element. No XCLASS, just typoscript. Valid html. Flexible configuration. Easy integration into any gallery you like.',
     'category'     => 'plugin',
-    'version'      => '4.1.4',
+    'version'      => '5.0.0-dev',
     'state'        => 'stable',
     'author'       => 'Benjamin Niediek',
     'author_email' => 'ben@channel-eight.de',
     'constraints'  => [
         'depends' => [
             'php'   => '7.0.0-0.0.0',
-            'typo3' => '7.6.0-8.7.99',
+            'typo3' => '8.7.0-9.5.99',
         ],
     ],
     'suggests'     => [],
