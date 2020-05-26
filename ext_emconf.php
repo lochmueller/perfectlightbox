@@ -20,7 +20,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'ben@channel-eight.de',
     'constraints'  => [
         'depends' => [
-            'php'   => '7.0.0-0.0.0',
+            'php'   => '7.0.0-7.3.99',
             'typo3' => '8.7.0-9.5.99',
         ],
     ],
